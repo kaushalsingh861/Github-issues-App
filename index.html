@@ -148,6 +148,7 @@ body {
 
 
 <script>
+//various variables for various category of issues
 var total_issues=0;
 var Less24=0;
 var pullcount=0;
@@ -160,9 +161,10 @@ var totalissues = [];
 
 
 
+//function pulling total open issues,this is sum of total issues and total pull request
 var request = function(i , repo){
 
-		var xmlhttp2 = new XMLHttpRequest();
+		var xmlhttp2 = new XMLHttpRequest(); //this function sends request to the api
 	    xmlhttp2.onreadystatechange=function()
 	    {
 	        if (xmlhttp2.readyState==4 && xmlhttp2.status==200)
@@ -272,7 +274,7 @@ var total = function(repo){
 }
 
 
-
+//fucntion to count and fetch no of pulls 
 var pulls = function(i , repo){
 
 		var xmlhttp2 = new XMLHttpRequest();
@@ -307,7 +309,7 @@ var pulls = function(i , repo){
 
 
 
-
+//this function is called by the button in the HTML this function initiate the whole process of the app
 var  getissue = function() {
 
 	total_issues=0;
