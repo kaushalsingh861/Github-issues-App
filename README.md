@@ -1,5 +1,5 @@
 # Github-issues-App
-Final app
+
 this is for displaying the issues which are open for a given public github repository
 the app catogorizes it as the issues which are open for one day,more than one day but less than a week , more than one week and 
 remaining.
